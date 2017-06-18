@@ -10,11 +10,18 @@ import android.widget.ImageView;
 
 public class sign_up extends AppCompatActivity {
     public Button btnsignup,btnback;
-    public EditText usernamme,email,password;
+    public EditText username,email,password;
 
     public  void SignUp(View view){
         btnsignup = (Button) findViewById(R.id.btnsignup);
         System.out.println("Sign up button tapped");
+
+        String Username = username.getText().toString();
+        String Email = email.getText().toString();
+        String Password = password.getText().toString();
+
+        user registered = new user(Username , Email , Password);
+
     }
 
     public void Back(View view){

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btndept"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="68dp"
+            android:background="@android:color/background_light"
+            android:onClick="Dept"
+            android:text="Department"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btncampus"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btndept"
+            android:layout_alignBottom="@+id/btndept"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp"
+            android:background="@android:color/background_light"
+            android:onClick="Campus"
+            android:text="Campus"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnalumni"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btndept"
+            android:layout_below="@+id/btndept"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/background_light"
+            android:onClick="Alumni"
+            android:text="Alumni"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btndd"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnalumni"
+            android:layout_alignStart="@+id/btncampus"
+            android:background="@android:color/background_light"
+            android:onClick="Dd"
+            android:text="DD CWC"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnbuzz"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnalumni"
+            android:layout_below="@+id/btnalumni"
+            android:layout_marginTop="26dp"
+            android:background="@android:color/background_light"
+            android:onClick="Buzz"
+            android:text="Buzz"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnview"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btndd"
+            android:layout_alignTop="@+id/btnbuzz"
+            android:background="@android:color/background_light"
+            android:onClick="View"
+            android:text="View"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btncareer"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnbuzz"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:background="@android:color/background_light"
+            android:onClick="Career"
+            android:text="Career"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+</LinearLayout>

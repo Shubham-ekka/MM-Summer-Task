@@ -21,8 +21,36 @@
             android:label="@string/title_activity_recent"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view"
+            android:label="@string/title_activity_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".department"
+            android:label="@string/title_activity_department"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".campus"
+            android:label="@string/title_activity_campus"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DdCwc"
+            android:label="@string/title_activity_dd_cwc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".alumni"
+            android:label="@string/title_activity_alumni"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".buzz"
             android:label="@string/title_activity_buzz"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".career"
+            android:label="@string/title_activity_career"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

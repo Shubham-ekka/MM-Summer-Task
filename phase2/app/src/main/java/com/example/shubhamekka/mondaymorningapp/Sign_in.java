@@ -12,17 +12,26 @@ public class Sign_in extends AppCompatActivity {
     Button btnskip,btnlogin,btnsignup;
     EditText username,password;
 
+    userlocalstore Userlocalstore;
+
     public void Skip(View view){
         btnskip = (Button) findViewById(R.id.btnskip);
         System.out.println("skip button tapped");
 
-        Intent sk = new Intent(this , recent.class);
+       Intent sk = new Intent(this , recent.class);
         startActivity(sk);
 
     }
     public void Login(View view){
         btnlogin = (Button) findViewById(R.id.btnlogin);
         System.out.println("login btn tapped");
+
+        user User = new user(null,null , null);
+        Userlocalstore.storeuserdata(User);
+        Userlocalstore.setUserLoggedIn(true);
+
+
+
     }
     public void Signup(View view){
         btnsignup = (Button) findViewById(R.id.btnsignup);
@@ -39,5 +48,7 @@ public class Sign_in extends AppCompatActivity {
         ImageView logo = (ImageView) findViewById(R.id.logo);
 
         logo.animate().alpha(1f);
+
+        Userlocalstore = new userlocalstore(this);
     }
 }

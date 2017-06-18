@@ -8,33 +8,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by shubham ekka on 01-Jun-17.
+ * Created by shubham ekka on 11-Jun-17.
  */
-class SectionsPageAdapter extends FragmentPagerAdapter{
-    private static final String TAG = "SectionsPageAdapter";
-    private final List<Fragment> mlist = new ArrayList<>();
-    private final List<String> mtitle = new ArrayList<>();
+public class SectionPageAdapter extends FragmentPagerAdapter{
 
-    public SectionsPageAdapter(FragmentManager fm) {
+    private final List<Fragment> mfragmentList = new ArrayList<>();
+    private final List<String> mfragmentTitle = new ArrayList<>();
+
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return mfragmentTitle.get(position);
+    }
+
+    public void addfragment(Fragment fragment , String string){
+        mfragmentList.add(fragment);
+        mfragmentTitle.add(string);
+    }
+
+    public SectionPageAdapter(FragmentManager fm) {
         super(fm);
     }
 
     @Override
-    public CharSequence getPageTitle(int position) {
-        return mtitle.get(position);
-    }
-    public void addFragment(Fragment fragment , String title){
-        mlist.add(fragment);
-        mtitle.add(title);
-    }
-
-    @Override
     public Fragment getItem(int position) {
-        return mlist.get(position);
+        return mfragmentList.get(position);
     }
 
     @Override
     public int getCount() {
-        return mlist.size();
+        return mfragmentList.size();
     }
+
 }
